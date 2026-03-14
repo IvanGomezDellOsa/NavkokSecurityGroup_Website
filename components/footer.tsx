@@ -40,8 +40,8 @@ export function Footer() {
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <Image
-                  src="/images/logo.png"
-                  alt="Navkok Security Group"
+                  src="/images/logos/logo__navkok.png"
+                  alt="Navkok Logo"
                   width={72}
                   height={72}
                   className="relative w-16 h-auto group-hover:scale-110 transition-transform duration-500"

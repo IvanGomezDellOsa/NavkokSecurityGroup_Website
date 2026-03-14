@@ -58,8 +58,8 @@ export function Navbar() {
                 isScrolled ? "opacity-0" : "opacity-100"
               )} />
               <Image
-                src="/images/logo.png"
-                alt="Navkok Security Group"
+                src="/images/logos/logo__navkok.png"
+                alt="Navkok Logo"
                 width={52}
                 height={52}
                 className={cn(

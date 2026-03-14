@@ -10,14 +10,14 @@ const stats = [
     icon: Award,
     value: 30,
     suffix: "+",
-    label: "Anos de experiencia",
+    label: "Años de experiencia",
     sublabel: "en fuerzas policiales",
   },
   {
     icon: Users,
     value: 20,
     suffix: "+",
-    label: "Anos custodiando",
+    label: "Años custodiando",
     sublabel: "Club San Lorenzo de Almagro",
   },
   {
@@ -30,30 +30,30 @@ const stats = [
 ]
 
 const qualityActions = [
-  "Proveer servicios que cumplan con los requisitos legales, esforzandonos por ir mas alla de las necesidades y expectativas de nuestros clientes.",
-  "Lograr la integracion y participacion de todo el personal a traves de la comunicacion y formacion continua.",
-  "Mejorar en forma continua el Sistema de Gestion de Calidad (SGC) y los procesos internos de la organizacion.",
+  "Proveer servicios que cumplan con los requisitos legales, esforzándonos por ir más allá de las necesidades y expectativas de nuestros clientes.",
+  "Lograr la integración y participación de todo el personal a través de la comunicación y formación continua.",
+  "Mejorar en forma continua el Sistema de Gestión de Calidad (SGC) y los procesos internos de la organización.",
 ]
 
 const certifications = [
-  { name: "ISO 9001:2015", description: "Gestion de Calidad" },
-  { name: "ISO 14001", description: "Gestion Ambiental" },
+  { name: "ISO 9001:2015", description: "Gestión de Calidad" },
+  { name: "ISO 14001", description: "Gestión Ambiental" },
   { name: "ISO 45001", description: "Seguridad y Salud" },
 ]
 
 const clients = [
-  { name: "San Lorenzo de Almagro", hasLogo: true },
-  { name: "AESA", hasLogo: true },
-  { name: "Constructora Sudamericana", hasLogo: true },
-  { name: "ReNacer", hasLogo: true },
-  { name: "Mendoza Gobierno", hasLogo: true },
-  { name: "Alliance Francaise", hasLogo: true },
-  { name: "Municipio de Maipu", hasLogo: true },
-  { name: "F.A.D.E.P.", hasLogo: true },
-  { name: "Tevelam", hasLogo: true },
-  { name: "Lauquen Obras", hasLogo: true },
-  { name: "Liga Mendocina de Futbol", hasLogo: true },
-  { name: "Cliente Corporativo", hasLogo: true },
+  { name: "San Lorenzo de Almagro", logo: "/images/logos/logo__san_lorenzo.webp" },
+  { name: "AESA", logo: "/images/logos/logo__AESA.webp" },
+  { name: "Constructora Sudamericana", logo: "/images/logos/logo__constructora_sudamericana.webp" },
+  { name: "ReNacer", logo: "/images/logos/logo__renacer.webp" },
+  { name: "Mendoza Gobierno", logo: "/images/logos/logo__mendoza_gobierno.webp" },
+  { name: "Alliance Francaise", logo: "/images/logos/logo__alliance_francaise.webp" },
+  { name: "Municipio de Maipu", logo: "/images/logos/logo__municipio_maipu.webp" },
+  { name: "F.A.D.E.P.", logo: "/images/logos/logo__fadep.webp" },
+  { name: "Tevelam", logo: "/images/logos/logo__tavelam.webp" },
+  { name: "Lauquen Obras", logo: "/images/logos/logo__lauquen_obras.webp" },
+  { name: "Liga Mendocina de Futbol", logo: "/images/logos/logo__liga_mendocina_futbol.webp" },
+  { name: "Cliente Corporativo", logo: null },
 ]
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
@@ -149,7 +149,7 @@ export function AboutSection() {
               </div>
               
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight mb-8 leading-tight">
-                Quienes{" "}
+                Quiénes{" "}
                 <span className="text-gradient font-normal">Somos</span>
               </h2>
               
@@ -158,10 +158,10 @@ export function AboutSection() {
                   Somos una empresa de seguridad comprometida en brindarle a nuestros clientes asesoramiento y soluciones inmediatas a la medida de sus necesidades.
                 </p>
                 <p>
-                  Nuestro equipo esta conformado por expertos con mas de <span className="text-primary font-medium">30 anos de experiencia</span> en diversas fuerzas policiales del pais.
+                  Nuestro equipo está conformado por expertos con más de <span className="text-primary font-medium">30 años de experiencia</span> en diversas fuerzas policiales del país.
                 </p>
                 <p className="text-foreground/80">
-                  Desde nuestros comienzos, hemos evolucionado y expandido nuestros servicios en un continuo proceso de especializacion e innovacion.
+                  Desde nuestros comienzos, hemos evolucionado y expandido nuestros servicios en un continuo proceso de especialización e innovación.
                 </p>
               </div>
 
@@ -207,16 +207,16 @@ export function AboutSection() {
                   {/* Center content - Logo */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center p-8">
-                      <Image
-                        src="/images/logo.png"
-                        alt="Navkok Security Group"
+                      <Image 
+                        src="/images/logos/logo__navkok.png" 
+                        alt="Navkok Security Logo"
                         width={160}
                         height={160}
                         className="mx-auto mb-6 group-hover:scale-110 transition-transform duration-500"
                       />
                       <p className="text-primary/60 text-xs uppercase tracking-[0.2em] mb-2">Navkok Security Group</p>
                       <p className="text-foreground/40 text-sm leading-relaxed max-w-xs">
-                        Excelencia en seguridad privada desde hace mas de 30 anos
+                        Excelencia en seguridad privada desde hace más de 30 años
                       </p>
                     </div>
                   </div>
@@ -230,7 +230,7 @@ export function AboutSection() {
                   <Award className="w-8 h-8 text-primary" />
                 </div>
                 <div className="absolute -bottom-6 -left-6 px-6 py-4 border border-primary/20 rounded-xl bg-secondary/50 backdrop-blur-sm animate-float" style={{ animationDelay: '0.5s' }}>
-                  <p className="text-xs text-primary uppercase tracking-wider">Certificacion ISO</p>
+                  <p className="text-xs text-primary uppercase tracking-wider">Certificación ISO</p>
                   <p className="text-lg text-foreground font-light">9001 | 14001 | 45001</p>
                 </div>
               </div>
@@ -306,10 +306,10 @@ export function AboutSection() {
                 </div>
                 
                 <h3 className="text-2xl lg:text-3xl font-light mb-6">
-                  Nuestra <span className="text-gradient">Mision</span>
+                  Nuestra <span className="text-gradient">Misión</span>
                 </h3>
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  Asegurar la proteccion de nuestros clientes, priorizando la prevencion para disuadir cualquier intento de alterar la tranquilidad y seguridad que les ofrecemos. Nos comprometemos a responder con prontitud, eficacia y profesionalismo ante cualquier amenaza.
+                  Asegurar la protección de nuestros clientes, priorizando la prevención para disuadir cualquier intento de alterar la tranquilidad y seguridad que les ofrecemos. Nos comprometemos a responder con prontitud, eficacia y profesionalismo ante cualquier amenaza.
                 </p>
 
                 {/* Decorative line */}
@@ -326,10 +326,10 @@ export function AboutSection() {
                 </div>
                 
                 <h3 className="text-2xl lg:text-3xl font-light mb-6">
-                  Nuestra <span className="text-gradient">Vision</span>
+                  Nuestra <span className="text-gradient">Visión</span>
                 </h3>
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  Posicionarnos como una de las principales companias de seguridad a nivel nacional e internacional, destacandonos por nuestro profesionalismo y fiabilidad. Nuestro personal se distinguira por su entrega, competencia, vigilancia, prevencion, coraje, disciplina y honor.
+                  Posicionarnos como una de las principales compañías de seguridad a nivel nacional e internacional, destacándonos por nuestro profesionalismo y fiabilidad. Nuestro personal se distinguirá por su entrega, competencia, vigilancia, prevención, coraje, disciplina y honor.
                 </p>
 
                 {/* Decorative line */}
@@ -362,13 +362,13 @@ export function AboutSection() {
 
               {/* CEO Info */}
               <div className="text-center md:text-left">
-                <span className="text-primary text-xs uppercase tracking-[0.2em] mb-4 block">Direccion General</span>
+                <span className="text-primary text-xs uppercase tracking-[0.2em] mb-4 block">Dirección General</span>
                 <h3 className="text-3xl lg:text-4xl font-light mb-2">
                   <span className="text-gradient">[Nombre del CEO]</span>
                 </h3>
                 <p className="text-muted-foreground text-lg mb-6">Director General / Fundador</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Con mas de tres decadas de experiencia en fuerzas de seguridad y gestion empresarial, lidera Navkok Security Group con una vision clara: brindar servicios de seguridad de elite que superen las expectativas del mercado.
+                  Con más de tres décadas de experiencia en fuerzas de seguridad y gestión empresarial, lidera Navkok Security Group con una visión clara: brindar servicios de seguridad de élite que superen las expectativas del mercado.
                 </p>
               </div>
             </div>
@@ -383,7 +383,7 @@ export function AboutSection() {
             <div className={`transition-all duration-700 ${qualityView.isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <span className="text-primary text-xs uppercase tracking-[0.2em] mb-4 block">Excelencia</span>
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-extralight mb-6">
-                Politica de <span className="text-gradient">Calidad</span>
+                Política de <span className="text-gradient">Calidad</span>
               </h3>
             </div>
           </div>
@@ -450,7 +450,7 @@ export function AboutSection() {
             <div className={`transition-all duration-700 ${clientsView.isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <span className="text-primary text-xs uppercase tracking-[0.2em] mb-4 block">Confianza</span>
               <h3 className="text-3xl md:text-4xl font-extralight">
-                Clientes que <span className="text-gradient">confian</span> en nosotros
+                Clientes que <span className="text-gradient">confían</span> en nosotros
               </h3>
             </div>
           </div>
@@ -465,9 +465,19 @@ export function AboutSection() {
                 className="group aspect-square flex flex-col items-center justify-center p-6 border border-primary/10 rounded-2xl bg-secondary/20 hover:border-primary/30 hover:bg-primary/5 transition-all duration-300 cursor-default hover:scale-105 hover:shadow-xl hover:shadow-primary/5"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                {/* Logo placeholder */}
-                <div className="w-16 h-16 mb-4 rounded-xl bg-primary/5 border border-primary/10 flex items-center justify-center group-hover:border-primary/30 group-hover:bg-primary/10 transition-all duration-300">
-                  <span className="text-primary/40 text-lg font-bold group-hover:text-primary/60 transition-colors">{client.name.charAt(0)}</span>
+                {/* Client Logo */}
+                <div className="w-24 h-24 mb-4 rounded-xl bg-primary/5 border border-primary/10 flex items-center justify-center group-hover:border-primary/30 group-hover:bg-primary/10 transition-all duration-300 overflow-hidden">
+                  {client.logo ? (
+                    <Image
+                      src={client.logo}
+                      alt={client.name}
+                      width={70}
+                      height={70}
+                      className="object-contain w-[70px] h-[70px] group-hover:scale-110 transition-transform duration-300"
+                    />
+                  ) : (
+                    <span className="text-primary/40 text-lg font-bold group-hover:text-primary/60 transition-colors">{client.name.charAt(0)}</span>
+                  )}
                 </div>
                 <span className="text-sm text-muted-foreground text-center leading-tight group-hover:text-foreground transition-colors font-medium">
                   {client.name}

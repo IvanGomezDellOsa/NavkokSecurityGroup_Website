@@ -16,58 +16,58 @@ import { cn } from "@/lib/utils"
 const services = [
   {
     icon: Camera,
-    title: "Camaras y alarmas",
+    title: "Capacitación y Consultoría",
     shortTitle: "Monitoreo",
-    description: "Cada hogar tiene diferentes necesidades ante las amenazas y robos, por eso contamos con un equipo de monitoreo las 24 hs desde cualquier lugar en donde te encuentres. Nuestros sistemas incluyen detectores de movimiento de exterior, sensores perimetrales, control de acceso remoto via aplicacion movil, alertas en tiempo real y grabacion continua en la nube. Realizamos mantenimiento preventivo y asistencia tecnica permanente.",
-    features: ["Monitoreo 24/7", "Detectores de exterior", "Control remoto", "Grabacion en nube", "Alertas en tiempo real"],
+    description: "Cada hogar tiene diferentes necesidades ante las amenazas y robos, por eso contamos con un equipo de monitoreo las 24 hs desde cualquier lugar en donde te encuentres. Nuestros sistemas incluyen detectores de movimiento de exterior, sensores perimetrales, control de acceso remoto vía aplicación móvil, alertas en tiempo real y grabación continua en la nube. Realizamos mantenimiento preventivo y asistencia técnica permanente.",
+    features: ["Monitoreo 24/7", "Detectores de exterior", "Control remoto", "Grabación en nube", "Alertas en tiempo real"],
     gradient: "from-blue-500/20 to-cyan-500/20",
   },
   {
     icon: Video,
-    title: "Video vigilancia movil",
+    title: "Video vigilancia móvil",
     shortTitle: "CCTV",
-    description: "Un equipo de tecnologia capacitado para proyectar, implementar, gestionar y monitorear sistemas de seguridad por camaras a la medida de su casa o empresa. Ofrecemos camaras HD y 4K, vision nocturna avanzada, deteccion inteligente de movimiento con IA, integracion con sistemas de alarma existentes, acceso remoto multiplataforma y almacenamiento seguro con redundancia.",
-    features: ["Implementacion personalizada", "Gestion integral", "Monitoreo continuo", "Camaras HD/4K", "Vision nocturna", "IA integrada"],
+    description: "Un equipo de tecnología capacitado para proyectar, implementar, gestionar y monitorear sistemas de seguridad por cámaras a la medida de su casa o empresa. Ofrecemos cámaras HD y 4K, visión nocturna avanzada, detección inteligente de movimiento con IA, integración con sistemas de alarma existentes, acceso remoto multiplataforma y almacenamiento seguro con redundancia.",
+    features: ["Implementación personalizada", "Gestión integral", "Monitoreo continuo", "Cámaras HD/4K", "Visión nocturna", "IA integrada"],
     gradient: "from-emerald-500/20 to-teal-500/20",
   },
   {
     icon: Zap,
-    title: "Cercos electricos",
-    shortTitle: "Perimetro",
-    description: "Sistema de proteccion perimetral con cercos electricos de alta tecnologia. Instalacion profesional con garantia, mantenimiento preventivo y respuesta inmediata ante cualquier incidencia. Nuestros cercos cumplen con todas las normativas de seguridad vigentes, incluyen sistemas de respaldo de energia, integracion con alarmas sonoras y visuales, y monitoreo remoto del estado del sistema.",
-    features: ["Proteccion perimetral", "Alta tecnologia", "Mantenimiento preventivo", "Normativas vigentes", "Respaldo de energia", "Alarmas integradas"],
+    title: "Cercos eléctricos",
+    shortTitle: "Perímetro",
+    description: "Sistema de protección perimetral con cercos eléctricos de alta tecnología. Instalación profesional con garantía, mantenimiento preventivo y respuesta inmediata ante cualquier incidencia. Nuestros cercos cumplen con todas las normativas de seguridad vigentes, incluyen sistemas de respaldo de energía, integración con alarmas sonoras y visuales, y monitoreo remoto del estado del sistema.",
+    features: ["Protección perimetral", "Alta tecnología", "Mantenimiento preventivo", "Normativas vigentes", "Respaldo de energía", "Alarmas integradas"],
     gradient: "from-yellow-500/20 to-orange-500/20",
   },
   {
     icon: ShieldCheck,
-    title: "Vigilancia fisica",
+    title: "Vigilancia física",
     shortTitle: "Guardias",
-    description: "Somos una empresa con servicios a medida de cada cliente, contamos con personal altamente capacitado y calificado. Brindamos soluciones de proteccion fisica y dinamica incluyendo control de mercaderias, control de ingreso y egreso, seguridad en transito, rondas de vigilancia programadas, custodia de bienes y valores, y proteccion de instalaciones criticas.",
-    features: ["Control de mercaderias", "Control de ingreso y egreso", "Seguridad en transito", "Rondas programadas", "Custodia de valores", "Personal capacitado"],
+    description: "Personal altamente capacitado para brindar seguridad física y control de accesos en empresas, barrios cerrados y dependencias oficiales.",
+    features: ["Control de mercaderías", "Control de ingreso y egreso", "Seguridad en tránsito", "Rondas programadas", "Custodia de valores", "Personal capacitado"],
     gradient: "from-primary/20 to-yellow-500/20",
   },
   {
     icon: Trophy,
-    title: "Seguridad deportiva",
+    title: "Seguridad en Eventos y Deportiva",
     shortTitle: "Deportes",
-    description: "En este rubro somos lideres en la funcion desde hace 20 anos. En contacto permanente con autoridades policiales y deportivas de diferentes paises e instituciones. Brindamos seguridad en estadios, eventos deportivos masivos, custodia de delegaciones, control de accesos y acreditaciones, coordinacion con fuerzas de seguridad, y gestion de emergencias en eventos.",
-    features: ["20 anos de experiencia", "Contacto con autoridades", "Cobertura internacional", "Eventos masivos", "Custodia de delegaciones", "Gestion de emergencias"],
+    description: "En este rubro somos líderes en la función desde hace 20 años. En contacto permanente con autoridades policiales y deportivas de diferentes países e instituciones. Brindamos seguridad en estadios, eventos deportivos masivos, custodia de delegaciones, control de accesos y acreditaciones, coordinación con fuerzas de seguridad, y gestión de emergencias en eventos.",
+    features: ["20 años de experiencia", "Contacto con autoridades", "Cobertura internacional", "Eventos masivos", "Custodia de delegaciones", "Gestión de emergencias"],
     gradient: "from-rose-500/20 to-pink-500/20",
   },
   {
     icon: Mountain,
     title: "Cobertura en locaciones alejadas",
     shortTitle: "Remoto",
-    description: "Servicio especializado en entornos remotos: zonas mineras, petroleras, rutas y locaciones alejadas. Operamos con infraestructura propia incluyendo conectividad Starlink, flota vehicular equipada, generadores autonomos, sistemas de comunicacion satelital, personal capacitado para condiciones extremas, y logistica integral para operaciones en lugares de dificil acceso.",
-    features: ["Conectividad Starlink", "Flota vehicular propia", "Logistica integral", "Zonas mineras y petroleras", "Comunicacion satelital", "Condiciones extremas"],
+    description: "Servicio especializado en entornos remotos: zonas mineras, petroleras, rutas y locaciones alejadas. Operamos con infraestructura propia incluyendo conectividad Starlink, flota vehicular equipada, generadores autónomos, sistemas de comunicación satelital, personal capacitado para condiciones extremas, y logística integral para operaciones en lugares de difícil acceso.",
+    features: ["Conectividad Starlink", "Flota vehicular propia", "Logística integral", "Zonas mineras y petroleras", "Comunicación satelital", "Condiciones extremas"],
     gradient: "from-indigo-500/20 to-purple-500/20",
   },
   {
     icon: UserCheck,
-    title: "Proteccion ejecutiva",
+    title: "Protección ejecutiva",
     shortTitle: "VIP",
-    description: "Brindamos servicios de proteccion personal a directivos, ejecutivos y figuras de alto perfil. Nuestro personal esta altamente capacitado en tecnicas de escolta, evaluacion de riesgos, conduccion evasiva y primeros auxilios avanzados. Ofrecemos planificacion de desplazamientos seguros, analisis de amenazas, coordinacion con autoridades, discrecion absoluta y disponibilidad 24/7.",
-    features: ["Discrecion total", "Evaluacion de riesgos", "Planificacion de desplazamientos", "Conduccion evasiva", "Primeros auxilios", "Disponibilidad 24/7"],
+    description: "Acompañamiento y protección personalizada para directivos, VIPs y personalidades, con esquemas de seguridad adaptables.",
+    features: ["Discreción total", "Evaluación de riesgos", "Planificación de desplazamientos", "Conducción evasiva", "Primeros auxilios", "Disponibilidad 24/7"],
     gradient: "from-primary/20 to-amber-500/20",
   },
 ]
@@ -118,11 +118,11 @@ export function ServicesSection() {
             <span className="text-primary text-xs uppercase tracking-[0.2em]">Nuestros Servicios</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-extralight mb-6">
-            <span className="text-gradient font-normal">Servicios</span>
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-extralight mb-8 leading-tight">
+            Nuestros <span className="text-gradient font-normal">Servicios</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg md:text-xl">
-            Proteccion adaptada a las necesidades especificas de cada cliente
+            Ofrecemos soluciones integrales y preventivas, adaptadas a las necesidades específicas de cada cliente. Contamos con tecnología de última generación y un equipo humano en constante formación.
           </p>
         </div>
 

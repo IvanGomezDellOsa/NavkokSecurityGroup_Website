@@ -111,7 +111,7 @@ export function HeroSection() {
             <div className="absolute inset-0 blur-3xl bg-primary/30 rounded-full scale-150 group-hover:scale-175 transition-transform duration-700" />
             <div className="absolute inset-0 blur-xl bg-primary/20 rounded-full scale-125 animate-pulse" />
             <Image
-              src="/images/logo.png"
+              src="/images/logos/logo__navkok.png"
               alt="Navkok Security Group"
               width={240}
               height={240}
