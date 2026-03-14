@@ -85,9 +85,8 @@ export function ContactSection() {
             <Navigation className="w-4 h-4 text-primary" />
             <span className="text-primary text-xs uppercase tracking-[0.2em]">Encuéntranos</span>
           </div>
-          
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-extralight mb-6">
-            Nuestras <span className="text-gradient font-normal">Sucursales</span>
+            Nuestras <span className="text-gradient font-normal">Oficinas</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg md:text-xl">
             Presencia estratégica en las principales ciudades del país

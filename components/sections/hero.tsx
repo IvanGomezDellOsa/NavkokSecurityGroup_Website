@@ -135,7 +135,7 @@ export function HeroSection() {
           </h1>
           
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed font-light">
-            Definiendo los estandares de excelencia en seguridad privada en Argentina
+            Más de 30 años protegiendo personas, bienes e instalaciones
           </p>
           
           {/* Animated location tags */}

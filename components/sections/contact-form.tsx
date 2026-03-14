@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image"
+
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -29,10 +31,10 @@ function useInView(options = {}) {
 }
 
 const formFields = [
-  { id: 'nombre', label: 'Nombre', icon: User, placeholder: 'Tu nombre completo', type: 'text', required: true },
+  { id: 'nombre', label: 'Nombre', icon: User, placeholder: 'Tu nombre completo', type: 'text', required: false },
   { id: 'empresa', label: 'Empresa', icon: Building, placeholder: 'Nombre de tu empresa', type: 'text', required: false },
-  { id: 'telefono', label: 'Telefono', icon: Phone, placeholder: '+54 11 1234-5678', type: 'tel', required: true },
-  { id: 'email', label: 'Email', icon: Mail, placeholder: 'tu@email.com', type: 'email', required: true },
+  { id: 'telefono', label: 'Teléfono', icon: Phone, placeholder: '+54 11 1234-5678', type: 'tel', required: false },
+  { id: 'email', label: 'Email', icon: Mail, placeholder: 'tu@email.com', type: 'email', required: false },
 ]
 
 export function ContactFormSection() {
@@ -40,6 +42,7 @@ export function ContactFormSection() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [focusedField, setFocusedField] = useState<string | null>(null)
   const [filledFields, setFilledFields] = useState<Set<string>>(new Set())
+  const [validationError, setValidationError] = useState<string | null>(null)
   const [currentStep, setCurrentStep] = useState(0)
   const headerView = useInView()
   const formView = useInView()
@@ -58,6 +61,22 @@ export function ContactFormSection() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setValidationError(null)
+
+    const formData = new FormData(e.currentTarget)
+    const telefono = (formData.get('telefono') as string || '').trim()
+    const email = (formData.get('email') as string || '').trim()
+    const mensaje = (formData.get('mensaje') as string || '').trim()
+
+    if (!telefono && !email) {
+      setValidationError('Completá al menos un dato de contacto: teléfono o email.')
+      return
+    }
+    if (!mensaje) {
+      setValidationError('El campo de mensaje no puede estar vacío.')
+      return
+    }
+
     setIsSubmitting(true)
     
     await new Promise((resolve) => setTimeout(resolve, 1500))
@@ -93,12 +112,11 @@ export function ContactFormSection() {
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight mb-6 leading-tight">
-            Solicita tu{" "}
-            <span className="text-gradient font-normal">Consulta</span>
+            <span className="text-gradient font-normal">Contactanos</span>
           </h2>
           
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            Completa el formulario y un asesor especializado se pondra en contacto para brindarte una solucion personalizada.
+            Completá el formulario y un asesor especializado se pondrá en contacto para brindarte una solución personalizada.
           </p>
         </div>
 
@@ -225,7 +243,7 @@ export function ContactFormSection() {
                       <Textarea
                         id="mensaje"
                         name="mensaje"
-                        placeholder="Contanos sobre tus necesidades de seguridad..."
+                        placeholder="Dejanos tu consulta o simplemente indicanos cómo contactarte y un asesor se comunicará con vos."
                         rows={5}
                         required
                         onFocus={() => setFocusedField('mensaje')}
@@ -243,6 +261,14 @@ export function ContactFormSection() {
                       )} />
                     </div>
                   </div>
+
+                  {/* Validation error */}
+                  {validationError && (
+                    <div className="flex items-center gap-2 p-4 rounded-xl border border-red-500/30 bg-red-500/10 text-red-400 text-sm animate-fade-in">
+                      <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                      {validationError}
+                    </div>
+                  )}
 
                   <Button
                     type="submit"
@@ -299,13 +325,12 @@ export function ContactFormSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <ImageIcon className="w-12 h-12 text-primary/20 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                  <p className="text-primary/60 text-xs uppercase tracking-[0.15em] mb-2">Imagen</p>
-                  <p className="text-foreground/40 text-xs leading-relaxed max-w-[180px]">
-                    Asesor de seguridad en reunion profesional
-                  </p>
-                </div>
+                <Image
+                  src="/images/sections_image/contact_image.webp"
+                  alt="Asesoramiento en seguridad privada Navkok"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
               </div>
               
               {/* Decorative corners */}

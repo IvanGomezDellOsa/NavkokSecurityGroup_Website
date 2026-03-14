@@ -49,12 +49,12 @@ export function Footer() {
               </div>
               <div>
                 <span className="text-gradient font-semibold text-xl tracking-[0.1em] block">NAVKOK</span>
-                <span className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase">Security Group</span>
+                <span className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase">Security Group SRL</span>
               </div>
             </Link>
             
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
-              Mas de 30 anos de experiencia brindando soluciones integrales de seguridad en Argentina.
+              Más de 30 años protegiendo personas, bienes e instalaciones.
             </p>
             
             <div className="space-y-3">

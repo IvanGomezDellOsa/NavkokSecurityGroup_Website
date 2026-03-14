@@ -30,15 +30,15 @@ const stats = [
 ]
 
 const qualityActions = [
-  "Proveer servicios que cumplan con los requisitos legales, esforzándonos por ir más allá de las necesidades y expectativas de nuestros clientes.",
-  "Lograr la integración y participación de todo el personal a través de la comunicación y formación continua.",
-  "Mejorar en forma continua el Sistema de Gestión de Calidad (SGC) y los procesos internos de la organización.",
+  "Proveer servicios que cumplan con los requisitos legales, esforzándonos por superar las necesidades y expectativas de nuestros clientes en cada operación.",
+  "Lograr la integración y participación de todo el personal a través de la comunicación y formación continua, promoviendo el trabajo en equipo y el compromiso con la excelencia.",
+  "Mejorar en forma continua el Sistema de Gestión de Calidad y los procesos internos, anticipando y minimizando defectos y errores, bajo las normas ISO 9001:2015, ISO 14001 e ISO 45001.",
 ]
 
 const certifications = [
   { name: "ISO 9001:2015", description: "Gestión de Calidad" },
   { name: "ISO 14001", description: "Gestión Ambiental" },
-  { name: "ISO 45001", description: "Seguridad y Salud" },
+  { name: "ISO 45001", description: "Seguridad y Salud en el Trabajo (SST)" },
 ]
 
 const clients = [
@@ -67,7 +67,7 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
         if (entries[0].isIntersecting && !hasAnimated.current) {
           hasAnimated.current = true
           let start = 0
-          const duration = 4000
+          const duration = 3600 // 10% faster than previous 4000
           const increment = value / (duration / 16)
           
           const timer = setInterval(() => {
@@ -155,13 +155,13 @@ export function AboutSection() {
               
               <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
                 <p>
-                  Somos una empresa de seguridad comprometida en brindarle a nuestros clientes asesoramiento y soluciones inmediatas a la medida de sus necesidades.
+                  Somos una empresa especializada en soluciones integrales de seguridad, con una vasta experiencia en la protección de personas, bienes e instalaciones. Nuestro equipo está conformado por expertos con más de <span className="text-primary font-medium">30 años de trayectoria</span> en diversas fuerzas policiales del país, aplicando ese conocimiento en los ámbitos de seguridad privada, personal, deportiva e industrial.
                 </p>
                 <p>
-                  Nuestro equipo está conformado por expertos con más de <span className="text-primary font-medium">30 años de experiencia</span> en diversas fuerzas policiales del país.
+                  Entre nuestros compromisos institucionales más destacados, contamos con más de <span className="text-primary font-medium">20 años brindando seguridad al Club Atlético San Lorenzo de Almagro</span>, experiencia que refleja la confianza que las organizaciones de alto perfil depositan en nuestro equipo.
                 </p>
-                <p className="text-foreground/80">
-                  Desde nuestros comienzos, hemos evolucionado y expandido nuestros servicios en un continuo proceso de especialización e innovación.
+                <p className="text-foreground">
+                  Desde nuestros comienzos, hemos evolucionado y expandido nuestros servicios en un continuo proceso de especialización e innovación, incorporando tecnología avanzada y personal altamente capacitado para garantizar la seguridad y tranquilidad de nuestros clientes en cualquier situación.
                 </p>
               </div>
 
@@ -216,7 +216,7 @@ export function AboutSection() {
                       />
                       <p className="text-primary/60 text-xs uppercase tracking-[0.2em] mb-2">Navkok Security Group</p>
                       <p className="text-foreground/40 text-sm leading-relaxed max-w-xs">
-                        Excelencia en seguridad privada desde hace más de 30 años
+                        Más de 30 años protegiendo personas, bienes e instalaciones
                       </p>
                     </div>
                   </div>
@@ -309,7 +309,7 @@ export function AboutSection() {
                   Nuestra <span className="text-gradient">Misión</span>
                 </h3>
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  Asegurar la protección de nuestros clientes, priorizando la prevención para disuadir cualquier intento de alterar la tranquilidad y seguridad que les ofrecemos. Nos comprometemos a responder con prontitud, eficacia y profesionalismo ante cualquier amenaza.
+                  Asegurar la protección de nuestros clientes priorizando la prevención, para disuadir cualquier intento de alterar su tranquilidad y seguridad. Nos comprometemos a responder con prontitud, eficacia y profesionalismo ante cualquier amenaza o daño dirigido hacia los objetivos bajo nuestra responsabilidad.
                 </p>
 
                 {/* Decorative line */}
@@ -329,7 +329,7 @@ export function AboutSection() {
                   Nuestra <span className="text-gradient">Visión</span>
                 </h3>
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  Posicionarnos como una de las principales compañías de seguridad a nivel nacional e internacional, destacándonos por nuestro profesionalismo y fiabilidad. Nuestro personal se distinguirá por su entrega, competencia, vigilancia, prevención, coraje, disciplina y honor.
+                  Posicionarnos como una de las principales compañías de seguridad a nivel nacional e internacional, destacándonos por nuestro profesionalismo y fiabilidad. Nuestro personal se distinguirá por su entrega y competencia, enfatizando la vigilancia, la prevención, el coraje, la disciplina y el honor.
                 </p>
 
                 {/* Decorative line */}
@@ -350,10 +350,12 @@ export function AboutSection() {
               {/* CEO Photo placeholder */}
               <div className="relative mx-auto md:mx-0 group">
                 <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-primary/20 relative bg-gradient-to-br from-secondary/50 to-secondary/30 group-hover:border-primary/50 transition-colors duration-500">
-                  <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <User className="w-20 h-20 text-primary/30 mb-2" />
-                    <p className="text-primary/60 text-[10px] uppercase tracking-[0.15em]">Foto CEO</p>
-                  </div>
+                  <Image
+                    src="/images/sections_image/ceo_image.webp"
+                    alt="CEO Navkok Security Group"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
                 </div>
                 {/* Animated rings */}
                 <div className="absolute inset-0 rounded-full border border-primary/10 scale-110 group-hover:scale-125 transition-transform duration-700" />

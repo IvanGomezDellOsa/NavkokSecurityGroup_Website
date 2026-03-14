@@ -70,7 +70,7 @@ export function Navbar() {
             </div>
             <div className="hidden sm:block">
               <span className="text-gradient font-semibold text-base tracking-[0.1em] block">NAVKOK</span>
-              <span className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase">Security Group</span>
+              <span className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase">Security Group SRL</span>
             </div>
           </Link>
 
