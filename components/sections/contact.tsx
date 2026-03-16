@@ -178,7 +178,7 @@ export function ContactSection() {
           {/* Map */}
           <div className="lg:col-span-3 h-[500px] lg:h-auto min-h-[500px] rounded-2xl overflow-hidden border border-primary/20 relative group">
             {/* Map header overlay */}
-            <div className="absolute top-0 left-0 right-0 bg-gradient-to-b from-background/90 via-background/50 to-transparent z-10 p-6">
+            <div className="absolute top-0 left-0 right-0 bg-gradient-to-b from-background/90 via-background/50 to-transparent z-10 p-6 pointer-events-none">
               <div className="flex items-center gap-3">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-primary animate-pulse" />
@@ -199,15 +199,15 @@ export function ContactSection() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title={`Mapa de ${locations[activeLocation].city}`}
-              className="grayscale group-hover:grayscale-0 transition-all duration-700"
+              className="w-full h-full"
             />
             
             {/* Corner accents */}
-            <div className="absolute top-4 right-4 w-16 h-16 border-r-2 border-t-2 border-primary/30 rounded-tr-lg" />
-            <div className="absolute bottom-4 left-4 w-16 h-16 border-l-2 border-b-2 border-primary/30 rounded-bl-lg" />
+            <div className="absolute top-4 right-4 w-16 h-16 border-r-2 border-t-2 border-primary/30 rounded-tr-lg pointer-events-none" />
+            <div className="absolute bottom-4 left-4 w-16 h-16 border-l-2 border-b-2 border-primary/30 rounded-bl-lg pointer-events-none" />
             
             {/* Bottom overlay */}
-            <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background/50 to-transparent z-10" />
+            <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background/50 to-transparent z-10 pointer-events-none" />
           </div>
         </div>
       </div>

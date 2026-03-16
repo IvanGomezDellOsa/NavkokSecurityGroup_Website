@@ -47,12 +47,12 @@ const clients = [
   { name: "Constructora Sudamericana", logo: "/images/logos/logo__constructora_sudamericana.webp" },
   { name: "ReNacer", logo: "/images/logos/logo__renacer.webp" },
   { name: "Mendoza Gobierno", logo: "/images/logos/logo__mendoza_gobierno.webp" },
-  { name: "Alliance Francaise", logo: "/images/logos/logo__alliance_francaise.webp" },
+  { name: "Alliance Francaise", logo: "/images/logos/logo__alliance_francaise.webp", bgWhite: true },
   { name: "Municipio de Maipu", logo: "/images/logos/logo__municipio_maipu.webp" },
   { name: "F.A.D.E.P.", logo: "/images/logos/logo__fadep.webp" },
   { name: "Tevelam", logo: "/images/logos/logo__tavelam.webp" },
   { name: "Lauquen Obras", logo: "/images/logos/logo__lauquen_obras.webp" },
-  { name: "Liga Mendocina de Futbol", logo: "/images/logos/logo__liga_mendocina_futbol.webp" },
+  { name: "Liga Mendocina de Fútbol", logo: "/images/logos/logo__liga_mendocina_futbol.webp" },
   { name: "Cliente Corporativo", logo: null },
 ]
 
@@ -214,7 +214,7 @@ export function AboutSection() {
                         height={160}
                         className="mx-auto mb-6 group-hover:scale-110 transition-transform duration-500"
                       />
-                      <p className="text-primary/60 text-xs uppercase tracking-[0.2em] mb-2">Navkok Security Group</p>
+                      <p className="text-primary/60 text-xs uppercase tracking-[0.2em] mb-2">Navkok Security Group SRL</p>
                       <p className="text-foreground/40 text-sm leading-relaxed max-w-xs">
                         Más de 30 años protegiendo personas, bienes e instalaciones
                       </p>
@@ -468,17 +468,21 @@ export function AboutSection() {
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 {/* Client Logo */}
-                <div className="w-24 h-24 mb-4 rounded-xl bg-primary/5 border border-primary/10 flex items-center justify-center group-hover:border-primary/30 group-hover:bg-primary/10 transition-all duration-300 overflow-hidden">
+                <div className={cn(
+                  "relative w-24 h-24 mb-4 rounded-xl border border-primary/10 group-hover:border-primary/30 transition-all duration-300 overflow-hidden",
+                  client.bgWhite ? "bg-white" : "bg-primary/5 group-hover:bg-primary/10"
+                )}>
                   {client.logo ? (
                     <Image
                       src={client.logo}
                       alt={client.name}
-                      width={70}
-                      height={70}
-                      className="object-contain w-[70px] h-[70px] group-hover:scale-110 transition-transform duration-300"
+                      fill
+                      className="object-contain p-1 rounded-xl group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : (
-                    <span className="text-primary/40 text-lg font-bold group-hover:text-primary/60 transition-colors">{client.name.charAt(0)}</span>
+                    <div className="flex items-center justify-center w-full h-full">
+                      <span className="text-primary/40 text-lg font-bold group-hover:text-primary/60 transition-colors">{client.name.charAt(0)}</span>
+                    </div>
                   )}
                 </div>
                 <span className="text-sm text-muted-foreground text-center leading-tight group-hover:text-foreground transition-colors font-medium">

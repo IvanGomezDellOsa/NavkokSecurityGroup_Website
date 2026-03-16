@@ -140,7 +140,7 @@ export function HeroSection() {
           
           {/* Animated location tags */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {["CABA", "Buenos Aires", "Mendoza", "Rio Negro", "Neuquen"].map((loc, i) => (
+            {["CABA", "Buenos Aires", "Mendoza", "Río Negro", "Neuquén"].map((loc, i) => (
               <span 
                 key={loc} 
                 className="px-4 py-2 border border-primary/20 rounded-full text-sm text-primary/80 hover:border-primary/60 hover:bg-primary/10 hover:scale-105 transition-all duration-300 cursor-default backdrop-blur-sm"

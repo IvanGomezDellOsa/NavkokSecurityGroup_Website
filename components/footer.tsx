@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils"
 const locations = [
   { city: "CABA", address: "11 de Septiembre de 1888 N4717" },
   { city: "Mendoza", address: "Montevideo N747 (PB B)" },
-  { city: "Neuquen", address: "Chos Malal N89, Plottier" },
-  { city: "Rio Negro", address: "Estados Unidos N546, Gral. Roca" },
+  { city: "Neuquén", address: "Chos Malal N89, Plottier" },
+  { city: "Río Negro", address: "Estados Unidos N546, Gral. Roca" },
 ]
 
 const quickLinks = [
@@ -94,7 +94,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <h4 className="text-xs uppercase tracking-[0.2em] text-primary mb-6 flex items-center gap-2">
               <Shield className="w-4 h-4" />
-              Navegacion
+              Navegación
             </h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
@@ -123,7 +123,7 @@ export function Footer() {
           <div className="lg:col-span-3">
             <h4 className="text-xs uppercase tracking-[0.2em] text-primary mb-6 flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              Sucursales
+              Oficinas
             </h4>
             <ul className="space-y-4">
               {locations.map((location) => (
@@ -157,7 +157,7 @@ export function Footer() {
                 </div>
               ))}
             </div>
-            <p className="text-[10px] text-primary/60 uppercase tracking-wider">Global Bureau Certificacion</p>
+            <p className="text-[10px] text-primary/60 uppercase tracking-wider">Global Bureau Certificación</p>
           </div>
         </div>
 
