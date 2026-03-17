@@ -30,9 +30,12 @@ const stats = [
 ]
 
 const qualityActions = [
-  "Proveer servicios que cumplan con los requisitos legales, esforzándonos por superar las necesidades y expectativas de nuestros clientes en cada operación.",
-  "Lograr la integración y participación de todo el personal a través de la comunicación y formación continua, promoviendo el trabajo en equipo y el compromiso con la excelencia.",
-  "Mejorar en forma continua el Sistema de Gestión de Calidad y los procesos internos, anticipando y minimizando defectos y errores, bajo las normas ISO 9001:2015, ISO 14001 e ISO 45001.",
+  "Satisfacer las necesidades de nuestros clientes, cumpliendo con los requisitos legales, reglamentarios y contractuales aplicables, y superando sus expectativas mediante servicios confiables, eficientes y seguros.",
+  "Promover la mejora continua del Sistema de Gestión Integrado (SGI), mediante la revisión periódica de nuestros objetivos, procesos, indicadores y el desempeño organizacional.",
+  "Involucrar a todo el personal, fomentando la participación y consulta activa, promoviendo un ambiente laboral seguro, saludable, motivador y orientado al trabajo en equipo.",
+  "Proteger el medio ambiente, previniendo la contaminación, minimizando los impactos ambientales significativos, haciendo uso eficiente de los recursos naturales, y gestionando adecuadamente los residuos generados por nuestras actividades.",
+  "Adoptar prácticas sostenibles, fomentando la concientización ambiental en todos los niveles de la organización y en nuestra cadena de valor.",
+  "Eliminar los peligros y reducir los riesgos laborales, garantizando condiciones de trabajo seguras y saludables, orientadas a prevenir lesiones y deterioro de la salud de nuestros colaboradores.",
 ]
 
 const certifications = [
@@ -385,7 +388,7 @@ export function AboutSection() {
             <div className={`transition-all duration-700 ${qualityView.isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <span className="text-primary text-xs uppercase tracking-[0.2em] mb-4 block">Excelencia</span>
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-extralight mb-6">
-                Política de <span className="text-gradient">Calidad</span>
+                Política de <span className="text-gradient">Gestión Integrada</span>
               </h3>
             </div>
           </div>
