@@ -90,6 +90,7 @@ export function ContactFormSection() {
   const progressPercentage = (filledFields.size / 5) * 100
 
   return (
+    <>
     <section id="consulta" className="py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
@@ -341,5 +342,60 @@ export function ContactFormSection() {
         </div>
       </div>
     </section>
+
+      {/* Contact CTA Banner */}
+      <div className="relative py-16 overflow-hidden">
+        {/* Animated gold line */}
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+
+        <div className="container mx-auto px-6 lg:px-12 relative z-10">
+          <div className="flex flex-col items-stretch justify-center gap-4 max-w-2xl mx-auto">
+            {/* Phone */}
+            <a
+              href="tel:08002206574"
+              className="group flex-1 flex flex-col sm:flex-row items-center gap-4 py-6 px-8 rounded-2xl border border-primary/10 bg-secondary/10 backdrop-blur-sm hover:border-primary/30 hover:bg-primary/5 transition-all duration-500"
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150" />
+                <div className="relative w-14 h-14 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-500">
+                  <Phone className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+                </div>
+                <div className="absolute inset-0 rounded-full border border-primary/30 animate-ping" style={{ animationDuration: '2s' }} />
+              </div>
+              <div className="text-center sm:text-left">
+                <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground block mb-1">
+                  Click y llamanos
+                </span>
+                <span className="text-2xl sm:text-3xl font-light tracking-[0.1em] text-gradient group-hover:tracking-[0.15em] transition-all duration-500">
+                  0800 220 6574
+                </span>
+              </div>
+            </a>
+
+            {/* Email */}
+            <a
+              href="mailto:navkokoperaciones@gmail.com"
+              className="group flex-1 flex flex-col sm:flex-row items-center gap-4 py-6 px-8 rounded-2xl border border-primary/10 bg-secondary/10 backdrop-blur-sm hover:border-primary/30 hover:bg-primary/5 transition-all duration-500"
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150" />
+                <div className="relative w-14 h-14 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-500">
+                  <Mail className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+                </div>
+              </div>
+              <div className="text-center sm:text-left">
+                <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground block mb-1">
+                  Escribinos
+                </span>
+                <span className="text-lg sm:text-xl font-light tracking-[0.05em] text-gradient group-hover:tracking-[0.1em] transition-all duration-500">
+                  navkokoperaciones@gmail.com
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }

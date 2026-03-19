@@ -16,10 +16,10 @@ const locations = [
   {
     city: "Mendoza",
     region: "Cuyo",
-    address: "Montevideo N747 (PB B)",
+    address: "Av. Emilio Civit 138, Mendoza",
     hours: "Lun-Vie 9 a 17 hs",
     phone: "0261 660-0507",
-    mapQuery: "Montevideo+747,+Mendoza,+Argentina",
+    mapQuery: "Avenida+Emilio+Civit+138,+Mendoza,+Argentina",
   },
   {
     city: "Neuquén",
@@ -145,16 +145,14 @@ export function ContactSection() {
                     </p>
                     
                     <div className="flex flex-wrap gap-4 text-xs text-muted-foreground pl-13">
-                      <span className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/50">
-                        <Clock className="w-3 h-3 text-primary/50" />
-                        {location.hours}
-                      </span>
-                      {location.phone && (
-                        <span className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/50">
-                          <Phone className="w-3 h-3 text-primary/50" />
-                          {location.phone}
-                        </span>
-                      )}
+                      <a
+                        href="tel:08002206574"
+                        className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/50 hover:bg-primary/10 hover:text-primary transition-colors"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <Phone className="w-3 h-3 text-primary/50" />
+                        0800 220 6574
+                      </a>
                     </div>
                   </div>
                   

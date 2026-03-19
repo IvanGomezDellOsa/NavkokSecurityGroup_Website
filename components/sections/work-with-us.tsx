@@ -147,7 +147,7 @@ export function WorkWithUsSection() {
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
             Somos un equipo en constante crecimiento. Si querés formar parte,{" "}
             <span className="text-gradient font-medium">escaneá o clickeá el QR</span>{" "}
-            y completá el formulario, nuestro equipo evaluará tu postulación.
+            y completá el formulario, evaluaremos tu postulación.
           </p>
         </div>
 

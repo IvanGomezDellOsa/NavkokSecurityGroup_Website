@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 const locations = [
   { city: "CABA", address: "11 de Septiembre de 1888 N4717" },
-  { city: "Mendoza", address: "Montevideo N747 (PB B)" },
+  { city: "Mendoza", address: "Av. Emilio Civit 138" },
   { city: "Neuquén", address: "Chos Malal N89, Plottier" },
   { city: "Río Negro", address: "Estados Unidos N546, Gral. Roca" },
 ]
@@ -68,13 +68,13 @@ export function Footer() {
                 navkokoperaciones@gmail.com
               </a>
               <a
-                href="tel:+5402616600507"
+                href="tel:08002206574"
                 className="group flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors p-3 rounded-lg hover:bg-primary/5"
               >
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                   <Phone className="w-4 h-4 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
-                0261 660-0507
+                0800 220 6574
               </a>
               <a
                 href="https://navkoksecuritygroup.com"
