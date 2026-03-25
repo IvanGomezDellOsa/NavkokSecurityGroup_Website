@@ -187,7 +187,7 @@ export function WorkWithUsSection() {
               className="block cursor-pointer"
             >
             <div
-              className="relative w-[280px] h-[330px] sm:w-[320px] sm:h-[376px] md:w-[380px] md:h-[447px]"
+              className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px]"
               style={{
                 display: "grid",
                 gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`,
