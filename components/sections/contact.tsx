@@ -67,7 +67,7 @@ export function ContactSection() {
   const contentView = useInView()
 
   return (
-    <section id="contacto" className="py-32 relative overflow-hidden">
+    <section id="contacto" className="py-20 md:py-24 xl:py-32 relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-background to-background" />

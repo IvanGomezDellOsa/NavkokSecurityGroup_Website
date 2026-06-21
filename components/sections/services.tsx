@@ -99,7 +99,7 @@ export function ServicesSection() {
   const gridView = useInView()
 
   return (
-    <section id="servicios" className="py-32 relative overflow-hidden">
+    <section id="servicios" className="py-20 md:py-24 xl:py-32 relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/5 to-background" />

@@ -95,7 +95,7 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
   }, [value])
 
   return (
-    <span ref={ref} className="text-5xl md:text-6xl lg:text-7xl font-extralight text-gradient tabular-nums">
+    <span ref={ref} className="text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-extralight text-gradient tabular-nums">
       {count}{suffix}
     </span>
   )
@@ -126,7 +126,6 @@ export function AboutSection() {
   const heroView = useInView()
   const statsView = useInView()
   const missionView = useInView()
-  const ceoView = useInView()
   const qualityView = useInView()
   const clientsView = useInView()
   const [hoveredStat, setHoveredStat] = useState<number | null>(null)
@@ -134,7 +133,7 @@ export function AboutSection() {
   return (
     <section id="nosotros" className="relative overflow-hidden">
       {/* Hero Intro Block */}
-      <div ref={heroView.ref} className="relative min-h-screen flex items-center py-32">
+      <div ref={heroView.ref} className="relative min-h-screen flex items-center py-20 md:py-24 xl:py-32">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" />
@@ -151,7 +150,7 @@ export function AboutSection() {
                 <span className="text-primary text-xs uppercase tracking-[0.2em]">Sobre Nosotros</span>
               </div>
               
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight mb-8 leading-tight">
+              <h2 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extralight mb-8 leading-tight">
                 Quiénes{" "}
                 <span className="text-gradient font-normal">Somos</span>
               </h2>
@@ -243,7 +242,7 @@ export function AboutSection() {
       </div>
 
       {/* Stats Section with enhanced effects */}
-      <div ref={statsView.ref} className="py-32 relative">
+      <div ref={statsView.ref} className="py-20 md:py-24 xl:py-32 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/10 to-background" />
         
         <div className="container mx-auto px-6 relative z-10">
@@ -297,7 +296,7 @@ export function AboutSection() {
       </div>
 
       {/* Mission & Vision with cards */}
-      <div ref={missionView.ref} className="py-32 relative">
+      <div ref={missionView.ref} className="py-20 md:py-24 xl:py-32 relative">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Mission */}
@@ -343,46 +342,10 @@ export function AboutSection() {
         </div>
       </div>
 
-      {/* CEO Section */}
-      <div ref={ceoView.ref} className="py-32 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5" />
-        
-        <div className="container mx-auto px-6 lg:px-12 relative z-10">
-          <div className={`max-w-4xl mx-auto transition-all duration-1000 ${ceoView.isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="grid md:grid-cols-[280px_1fr] gap-12 items-center">
-              {/* CEO Photo placeholder */}
-              <div className="relative mx-auto md:mx-0 group">
-                <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-primary/20 relative bg-gradient-to-br from-secondary/50 to-secondary/30 group-hover:border-primary/50 transition-colors duration-500">
-                  <Image
-                    src="/images/sections_image/ceo_image.webp"
-                    alt="CEO Navkok Security Group"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                </div>
-                {/* Animated rings */}
-                <div className="absolute inset-0 rounded-full border border-primary/10 scale-110 group-hover:scale-125 transition-transform duration-700" />
-                <div className="absolute inset-0 rounded-full border border-primary/5 scale-125 group-hover:scale-150 transition-transform duration-700" />
-              </div>
-
-              {/* CEO Info */}
-              <div className="text-center md:text-left">
-                <span className="text-primary text-xs uppercase tracking-[0.2em] mb-4 block">Dirección General</span>
-                <h3 className="text-3xl lg:text-4xl font-light mb-2">
-                  <span className="text-gradient">[Nombre del CEO]</span>
-                </h3>
-                <p className="text-muted-foreground text-lg mb-6">Director General / Fundador</p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Con más de tres décadas de experiencia en fuerzas de seguridad y gestión empresarial, lidera Navkok Security Group con una visión clara: brindar servicios de seguridad de élite que superen las expectativas del mercado.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Sección Dirección General (CEO) oculta hasta contar con el nombre y los datos reales */}
 
       {/* Quality Policy */}
-      <div ref={qualityView.ref} className="py-32 relative">
+      <div ref={qualityView.ref} className="py-20 md:py-24 xl:py-32 relative">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <div className={`transition-all duration-700 ${qualityView.isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -449,7 +412,7 @@ export function AboutSection() {
       </div>
 
       {/* Clients Section */}
-      <div ref={clientsView.ref} className="py-32 relative border-t border-primary/10">
+      <div ref={clientsView.ref} className="py-20 md:py-24 xl:py-32 relative border-t border-primary/10">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <div className={`transition-all duration-700 ${clientsView.isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>

@@ -104,7 +104,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-30 container mx-auto px-6 text-center pt-32 pb-32">
+      <div className="relative z-30 container mx-auto px-6 text-center pt-24 pb-24 xl:pt-32 xl:pb-32">
         {/* Logo with enhanced glow */}
         <div className={`mb-10 transition-all duration-1000 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
           <div className="relative inline-block group">
@@ -129,7 +129,7 @@ export function HeroSection() {
             <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-primary animate-line-grow" />
           </div>
           
-          <h1 className="font-sans text-4xl md:text-6xl lg:text-8xl font-extralight tracking-tight mb-6">
+          <h1 className="font-sans text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-extralight tracking-tight mb-6">
             <span className="block text-gradient font-normal mb-2 animate-text-shimmer bg-clip-text">Navkok</span>
             <span className="block text-foreground">Security Group SRL</span>
           </h1>

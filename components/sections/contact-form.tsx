@@ -91,7 +91,7 @@ export function ContactFormSection() {
 
   return (
     <>
-    <section id="consulta" className="py-32 relative overflow-hidden">
+    <section id="consulta" className="py-20 md:py-24 xl:py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
       
