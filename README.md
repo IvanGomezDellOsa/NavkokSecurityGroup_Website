@@ -1,3 +1,5 @@
+[Español](README.md) | [English](README.en.md)
+
 # NavkokSecurityGroup — Sitio Corporativo
 
 Rediseño completo del sitio web corporativo para **Navkok Security Group SRL**, empresa de seguridad privada con más de 30 años de trayectoria y certificaciones ISO 9001, 14001 y 45001. Proyecto freelance: desde la propuesta inicial hasta el deploy en producción.
