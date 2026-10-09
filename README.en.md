@@ -2,9 +2,9 @@
 
 # NavkokSecurityGroup — Corporate Website
 
-Complete redesign of the corporate website for **Navkok Security Group SRL**, a private security company with over 30 years of experience and ISO 9001, 14001 and 45001 certifications. Freelance project: from the initial proposal to the production deploy.
+Complete redesign of the corporate website for **Navkok Security Group SRL**, a private security company with over 30 years of experience and ISO 9001, 14001 and 45001 certifications. Freelance project: from the initial proposal to the finished site.
 
-🌐 **Production deploy:** [navkok-website-private.vercel.app](https://navkok-website-private.vercel.app/)
+🌐 **Preview:** [navkok-website-private.vercel.app](https://navkok-website-private.vercel.app/)
 
 ---
 
