@@ -6,6 +6,11 @@ Rediseño completo del sitio web corporativo para **Navkok Security Group SRL**,
 
 🌐 **Vista previa:** [navkok-website-private.vercel.app](https://navkok-website-private.vercel.app/)
 
+<p align="center">
+  <img src=".github/readme/sitio.webp" alt="El hero del sitio: el escudo de Navkok, el nombre en dorado y las provincias donde opera" width="74%">
+  <img src=".github/readme/movil.webp" alt="El sitio en un teléfono" width="22%">
+</p>
+
 ---
 
 ## 🛠 Stack
@@ -32,6 +37,7 @@ Proyecto freelance con contacto directo con el cliente. Relevé necesidades, pro
 
 **Iván Gómez Dell'Osa**
 
+- Web: [ivangomezdellosa.com.ar](https://www.ivangomezdellosa.com.ar)
 - Email: [ivangomezdellosa@gmail.com](mailto:ivangomezdellosa@gmail.com)
 - LinkedIn: [linkedin.com/in/ivangomezdellosa](https://www.linkedin.com/in/ivangomezdellosa/)
 - GitHub: [IvanGomezDellOsa](https://github.com/IvanGomezDellOsa)

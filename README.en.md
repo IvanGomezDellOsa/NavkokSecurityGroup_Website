@@ -6,6 +6,11 @@ Complete redesign of the corporate website for **Navkok Security Group SRL**, a 
 
 🌐 **Preview:** [navkok-website-private.vercel.app](https://navkok-website-private.vercel.app/)
 
+<p align="center">
+  <img src=".github/readme/sitio.webp" alt="The site's hero: the Navkok badge, the name in gold and the provinces where it operates" width="74%">
+  <img src=".github/readme/movil.webp" alt="The website on a phone" width="22%">
+</p>
+
 ---
 
 ## 🛠 Stack
@@ -32,6 +37,7 @@ Freelance project with direct client contact. I gathered requirements, proposed 
 
 **Iván Gómez Dell'Osa**
 
+- Web: [ivangomezdellosa.com.ar](https://www.ivangomezdellosa.com.ar)
 - Email: [ivangomezdellosa@gmail.com](mailto:ivangomezdellosa@gmail.com)
 - LinkedIn: [linkedin.com/in/ivangomezdellosa](https://www.linkedin.com/in/ivangomezdellosa/)
 - GitHub: [IvanGomezDellOsa](https://github.com/IvanGomezDellOsa)
